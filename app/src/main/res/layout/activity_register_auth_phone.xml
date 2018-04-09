@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_register_auth_phone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/register_phone_country"
+            android:textColor="@color/text_title_color"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:text="中国大陆"
+            android:textColor="@color/text_title_color"
+            />
+        <View
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#EBEBEB" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="+86"
+            android:textColor="@color/text_title_color"
+            />
+
+        <com.horen.cortp.company.widget.PWEditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="10dp"
+            android:textSize="@dimen/font_normal"
+            android:hint="请输入您的手机号"
+            android:maxLength="11"
+            android:inputType="phone"
+            android:background="@null"
+            app:x_clearDrawable="@drawable/icon_hide"
+            app:x_hidePwdDrawable="@null"
+            app:x_showPwdDrawable="@null"
+            />
+        <View
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#EBEBEB" />
+
+    </FrameLayout>
+
+    <com.jaydenxiao.common.commonwidget.RippleButton
+        android:id="@+id/bt_register_next"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginTop="30dp"
+        android:enabled="false"
+        app:gray_text="下一步"
+        app:green_text="下一步"
+        app:loading_text="加载中"
+        />
+</LinearLayout>

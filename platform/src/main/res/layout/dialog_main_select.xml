@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_dialog_select"
+    android:layout_width="110dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="right"
+        android:focusable="false"
+        android:layout_marginBottom="-8dp"
+        android:layout_marginRight="@dimen/margin_5"
+        android:src="@drawable/ic_platform_mainselect_up" />
+
+    <LinearLayout
+        android:id="@+id/ll_dialog_select_scan"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:background="@color/color_main_color"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_dialog_scan" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:gravity="center_vertical"
+            android:text="@string/dialog_select_scan"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/color_main_color">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:background="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_dialog_select_experience"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:background="@color/color_main_color"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_dialog_experience" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:gravity="center_vertical"
+            android:text="@string/dialog_select_experience"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/color_main_color">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:background="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_dialog_select_firefly"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:background="@color/color_main_color"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_dialog_firefly" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:gravity="center_vertical"
+            android:text="@string/dialog_select_firesfly"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_normal" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/color_main_color"
+        android:minHeight="@dimen/toolbar_height"
+        android:subtitle=""
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:id="@+id/left_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tool_bar_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/right_iv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:textSize="@dimen/textSize_15"
+            android:id="@+id/right_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_main_color">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_civ"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="1dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_civ"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_gold" />
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Chen"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_16" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.allen.library.CommonTextView
+        android:id="@+id/tv_fanyong"
+        app:cSetMaxEms="50"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        app:cBothDividerLineMarginLeft="10dp"
+        app:cBothDividerLineMarginRight="10dp"
+        app:cDividerLineColor="@color/divider"
+        app:cDividerLineHeight="1dp"
+        app:cLeftIconResForDrawableLeft="@drawable/icon_fanyong"
+        app:cLeftTextSize="@dimen/textSize_15"
+        app:cLeftTextString="@string/fanyong"
+        app:cLeftViewPaddingLeft="30dp"
+        app:cRightIconResForDrawableLeft="@drawable/icon_right"
+        app:cShowDividerLineType="bottom"
+        app:cUseRipple="true" />
+
+
+    <com.allen.library.CommonTextView
+        app:cSetMaxEms="50"
+        android:id="@+id/tv_yunli"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        app:cBothDividerLineMarginLeft="10dp"
+        app:cBothDividerLineMarginRight="10dp"
+        app:cDividerLineColor="@color/divider"
+        app:cDividerLineHeight="1dp"
+        app:cLeftIconResForDrawableLeft="@drawable/icon_yunli"
+        app:cLeftTextSize="@dimen/textSize_15"
+        app:cLeftTextString="@string/yunli"
+        app:cLeftViewPaddingLeft="30dp"
+        app:cRightIconResForDrawableLeft="@drawable/icon_right"
+        app:cUseRipple="true" />
+
+    <com.allen.library.CommonTextView
+        android:id="@+id/tv_kefu"
+        app:cSetMaxEms="50"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        app:cBothDividerLineMarginLeft="10dp"
+        app:cBothDividerLineMarginRight="10dp"
+        app:cDividerLineColor="@color/divider"
+        app:cDividerLineHeight="1dp"
+        app:cLeftIconResForDrawableLeft="@drawable/icon_kefu"
+        app:cLeftTextSize="@dimen/textSize_15"
+        app:cLeftTextString="@string/custom_service"
+        app:cLeftViewPaddingLeft="30dp"
+        app:cRightIconResForDrawableLeft="@drawable/icon_right"
+        app:cUseRipple="true" />
+
+    <com.allen.library.CommonTextView
+        android:id="@+id/tv_collect"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:cSetMaxEms="50"
+        android:background="@color/white"
+        app:cBothDividerLineMarginLeft="10dp"
+        app:cBothDividerLineMarginRight="10dp"
+        app:cDividerLineColor="@color/divider"
+        app:cDividerLineHeight="1dp"
+        app:cLeftIconResForDrawableLeft="@drawable/icon_me_collect"
+        app:cLeftTextSize="@dimen/textSize_15"
+        app:cLeftTextString="@string/my_collect"
+        app:cLeftViewPaddingLeft="30dp"
+        app:cRightIconResForDrawableLeft="@drawable/icon_right"
+        app:cShowDividerLineType="bottom"
+        app:cUseRipple="true" />
+
+    <com.allen.library.CommonTextView
+        android:id="@+id/tv_setting"
+        android:layout_width="match_parent"
+        app:cSetMaxEms="50"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        app:cDividerLineHeight="0dp"
+        app:cLeftIconResForDrawableLeft="@drawable/icon_setting"
+        app:cLeftTextSize="@dimen/textSize_15"
+        app:cLeftTextString="@string/settings"
+        app:cLeftViewPaddingLeft="30dp"
+        app:cRightIconResForDrawableLeft="@drawable/icon_right"
+        app:cUseRipple="true" />
+</LinearLayout>

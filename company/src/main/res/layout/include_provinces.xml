@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/add_relation_provinces"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/margin_12">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:text="@string/provinces"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize_16" />
+
+        <TextView
+            android:id="@+id/tv_add_relation_sheng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/text_hint_color"
+            android:layout_weight="3"
+            android:background="@null"
+            android:drawableRight="@drawable/icon_right"
+            android:hint="@string/provinces"
+            android:maxLength="50"
+            android:textSize="@dimen/textSize_16" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/divider"
+        android:layout_marginTop="0dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/margin_12">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:text="@string/shi"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize_16" />
+
+        <TextView
+            android:id="@+id/tv_add_relation_shi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:textColorHint="@color/text_hint_color"
+            android:background="@null"
+            android:drawableRight="@drawable/icon_right"
+            android:hint="@string/shi"
+            android:maxLength="50"
+            android:textSize="@dimen/textSize_16" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/divider"
+        android:layout_marginTop="0dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/margin_12">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:text="@string/qu"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize_16" />
+
+        <TextView
+            android:id="@+id/tv_add_relation_qu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@null"
+            android:drawableRight="@drawable/icon_right"
+            android:textColorHint="@color/text_hint_color"
+            android:hint="@string/qu"
+            android:maxLength="50"
+            android:textSize="@dimen/textSize_16" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/divider"
+        android:layout_marginTop="0dp" />
+
+    <!--详细地址 -->
+    <EditText
+        android:id="@+id/et_relation_address_details"
+        android:layout_width="match_parent"
+        android:layout_height="113dp"
+        android:background="@color/white"
+        android:gravity="top|left"
+        android:hint="@string/add_relation_address_hint"
+        android:maxLength="50"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingTop="@dimen/margin_12"
+        android:textColor="@color/text_title_color"
+        android:textColorHint="@color/text_hint_color"
+        android:textSize="@dimen/textSize_16" />
+
+</LinearLayout>

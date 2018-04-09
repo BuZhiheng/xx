@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout_black" />
+
+    <com.jaydenxiao.common.commonwidget.MyScrollview
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:background="@drawable/shape_blue_bg">
+
+                <TextView
+                    android:id="@+id/tv_order_delivery_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="36dp"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    tools:text="已完成" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="56dp"
+                    android:src="@drawable/service_order_complete" />
+
+            </RelativeLayout>
+
+
+            <!--货物列表-->
+            <include layout="@layout/service_include_goods_list" />
+
+            <!--异常拒收列表-->
+            <include layout="@layout/include_order_reject" />
+
+
+            <View style="@style/blue_divider" />
+
+            <!--送货信息-->
+            <include layout="@layout/service_include_send_boxs_info" />
+
+
+            <View style="@style/blue_divider" />
+            <!--取货信息-->
+            <include layout="@layout/service_include_collect_goods_info" />
+
+            <!--配送信息-->
+            <View style="@style/blue_divider" />
+
+            <include layout="@layout/service_include_delivery_info" />
+
+            <TextView
+                android:id="@+id/tv_sign_time"
+                style="@style/content_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="right|center_vertical"
+                android:minHeight="38dp"
+                android:paddingRight="10dp"
+                android:text="@string/sign_time" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white">
+
+                <ImageView
+                    android:visibility="gone"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginBottom="13dp"
+                    android:id="@+id/iv_photo"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.jaydenxiao.common.commonwidget.MyScrollview>
+</LinearLayout>

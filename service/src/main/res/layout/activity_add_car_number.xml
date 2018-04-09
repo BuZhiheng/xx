@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_name_type"
+            style="@style/base_text"
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/car_number_service"
+            android:textSize="@dimen/textSize_16" />
+
+        <EditText
+            android:id="@+id/et_car_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/tv_phone_address"
+            android:layout_toRightOf="@+id/tv_name_type"
+            android:background="@color/white"
+            android:hint="@string/pls_input_car_number"
+            android:singleLine="true"
+            android:maxLength="15"
+            android:textColor="@color/text_title_color"
+            android:textColorHint="@color/DCDCDC"
+            android:textSize="@dimen/textSize_14" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_defult"
+            style="@style/base_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="@string/new_address_default_set"
+            android:textSize="@dimen/textSize_16" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/tv_defult"
+            android:background="#00000000"
+            android:button="@drawable/check_state"
+            android:padding="5dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

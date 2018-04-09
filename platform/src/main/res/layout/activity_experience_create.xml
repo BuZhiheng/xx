@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+    <include layout="@layout/toolbar_layout"/>
+    <include layout="@layout/activity_experience_create_title"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_use_box_create"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        <ImageButton
+            android:id="@+id/btn_experience_create"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:background="@drawable/ic_platform_add"
+            android:onClick="onClick"
+            />
+    </FrameLayout>
+    <TextView
+        android:id="@+id/tv_experience_create_commit"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@color/color_main_color"
+        android:text="@string/platform_introduce"
+        android:textSize="@dimen/font_normal2"
+        android:textColor="@color/white"
+        />
+</LinearLayout>

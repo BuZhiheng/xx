@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        app:theme="@style/MyCheckBox" />
+
+    <TextView
+        android:id="@+id/tv_box_type"
+        style="@style/base_text"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="130dp"
+        android:layout_toRightOf="@+id/checkbox"
+        android:text="IF1040 蓝色版 100个" />
+
+    <TextView
+        android:id="@+id/tv_box_color"
+        style="@style/base_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text=""
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_box_number"
+        style="@style/base_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text=""
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/et_number"
+        style="@style/base_edittext"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape_et"
+        android:gravity="center_vertical"
+        android:hint="@string/order_hint_num"
+        android:inputType="number"
+        android:maxLength="6" />
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jcminarro.roundkornerlayout.RoundKornerLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:stv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    app:corner_radius="6dp">
+
+
+    <TextView
+        style="@style/base_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="@string/input_reject_number"
+        android:textSize="18sp" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.allen.library.SuperButton
+            android:id="@+id/stb_left"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:maxWidth="100dp"
+            android:minWidth="70dp"
+            android:text="@string/disagree"
+            android:textColor="@drawable/selector_tv_color"
+            stv:sCornersRadius="16dp"
+            stv:sSelectorNormalColor="@color/white"
+            stv:sSelectorPressedColor="@color/color_main_color"
+            stv:sStrokeColor="@color/color_main_color"
+            stv:sStrokeWidth="0.5dp"
+            stv:sUseSelector="true" />
+
+        <com.allen.library.SuperButton
+            android:id="@+id/tv_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/stb_left"
+            android:maxWidth="100dp"
+            android:minWidth="70dp"
+            android:text="@string/agree"
+            android:textColor="@drawable/selector_tv_color"
+            stv:sCornersRadius="16dp"
+            stv:sSelectorNormalColor="@color/white"
+            stv:sSelectorPressedColor="@color/color_main_color"
+            stv:sStrokeColor="@color/color_main_color"
+            stv:sStrokeWidth="0.5dp"
+            stv:sUseSelector="true" />
+
+    </LinearLayout>
+
+</com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>

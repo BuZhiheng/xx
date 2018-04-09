@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="@dimen/margin_5"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    >
+    <LinearLayout
+        android:id="@+id/ll_experience_create_txt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+        <TextView
+            android:id="@+id/tv_experience_create_txt"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_10"
+            android:gravity="center_vertical"
+            android:text="@string/platform_test_mid"
+            />
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin_10"
+            android:src="@drawable/ic_common_right"
+            />
+    </LinearLayout>
+</LinearLayout>

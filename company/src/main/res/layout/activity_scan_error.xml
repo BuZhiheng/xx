@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    <com.jaydenxiao.common.commonwidget.CustomTitleBar
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:is_white="true"
+        app:title="提示"
+        />
+    <TextView
+        android:id="@+id/tv_scan_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:gravity="center"
+        android:text="提示"
+        android:textSize="@dimen/font_normal3"
+        android:textColor="@color/black"
+        />
+    <com.jaydenxiao.common.commonwidget.RippleButton
+        android:id="@+id/btn_scan_error"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/margin_30"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        app:green_text="重新扫描"
+        />
+</LinearLayout>

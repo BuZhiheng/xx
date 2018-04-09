@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:stv="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg">
+
+    <com.mcxtzhang.swipemenulib.SwipeMenuLayout
+        android:id="@+id/swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="10dp"
+        app:ios = "false"
+        android:clickable="true">
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:background="#00000000"
+                android:button="@drawable/check_state" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_contact_name"
+                    style="@style/base_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/contacts"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:id="@+id/tv_contact_phone"
+                    style="@style/base_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/contact_number"
+                    android:textColor="#666666" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.allen.library.SuperButton
+            android:id="@+id/stb_default"
+            android:layout_width="54dp"
+            android:layout_height="66dp"
+            android:text="@string/default_driver"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            stv:sGradientEndColor="#6CD96C"
+            stv:sGradientOrientation="LEFT_RIGHT"
+            stv:sGradientStartColor="#85F185" />
+
+        <com.allen.library.SuperButton
+            android:id="@+id/sbt_change"
+            android:layout_width="54dp"
+            android:layout_height="66dp"
+            android:text="@string/change_driver"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            stv:sGradientEndColor="#5FB2FA"
+            stv:sGradientOrientation="LEFT_RIGHT"
+            stv:sGradientStartColor="#88CFF6" />
+
+        <com.allen.library.SuperButton
+            android:id="@+id/stb_delete"
+            android:layout_width="54dp"
+            android:layout_height="66dp"
+            android:text="@string/delete_driver"
+            android:textColor="@color/white"
+            stv:sGradientEndColor="#DD2727"
+            stv:sGradientOrientation="LEFT_RIGHT"
+            stv:sGradientStartColor="#FE6D6D" />
+
+    </com.mcxtzhang.swipemenulib.SwipeMenuLayout>
+</LinearLayout>

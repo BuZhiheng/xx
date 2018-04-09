@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mcxtzhang.swipemenulib.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:stv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg"
+    android:clickable="true"
+    app:ios="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/tv1"
+                style="@style/text_14_333"
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/bad_number" />
+
+            <ImageView
+                android:id="@+id/iv_damage_boxs_number"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv1"
+                android:padding="5dp"
+                android:src="@drawable/service_icon_scan_boxs"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tv_box_number"
+                style="@style/base_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv1"
+                android:singleLine="true"
+                tools:text="67234324523234234234235234234242342352342342345234234" />
+
+        </RelativeLayout>
+
+        <View
+            style="@style/divider"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                style="@style/text_14_333"
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/damage_type" />
+
+            <LinearLayout
+                android:id="@+id/ll_select_type"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_damaged_type"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:text="@string/damage_type"
+                    android:textColor="@color/DCDCDC"
+                    android:textSize="14dp" />
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/service_down_arrow" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <View
+            style="@style/divider"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                style="@style/text_14_333"
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/damaged_photos" />
+
+            <com.horen.cortp.service.widget.CustomRecyclerView
+                android:id="@+id/recycler_photo"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"></com.horen.cortp.service.widget.CustomRecyclerView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="105dp"
+            android:layout_marginBottom="17dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <EditText
+                android:id="@+id/et_remake"
+                style="@style/base_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                android:background="@drawable/shape_et"
+                android:gravity="left"
+                android:hint="@string/order_et_note_hint"
+                android:maxLength="50"
+                android:paddingLeft="10dp"
+                android:paddingTop="4dp"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:textColor="@color/text_content_color"
+                android:textColorHint="#DCDCDC"
+                android:textSize="@dimen/textSize_14" />
+
+            <TextView
+                android:id="@+id/id_editor_detail_font_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="10dp"
+                android:text="0/50"
+                android:textColor="@color/text_content_color"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider" />
+
+    </LinearLayout>
+
+    <com.allen.library.SuperButton
+        android:id="@+id/btnDelete"
+        android:layout_width="54dp"
+        android:layout_height="match_parent"
+        android:text="@string/delete_driver"
+        android:textColor="@color/white"
+        stv:sGradientEndColor="#DD2727"
+        stv:sGradientOrientation="LEFT_RIGHT"
+        stv:sGradientStartColor="#FE6D6D" />
+
+</com.mcxtzhang.swipemenulib.SwipeMenuLayout>

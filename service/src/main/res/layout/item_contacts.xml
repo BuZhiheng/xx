@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/selector_rl_click"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <TextView
+        android:id="@+id/tv_contact_name"
+        style="@style/base_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="张三" />
+
+    <TextView
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tv_contact_name"
+        android:text="@string/service_defult"
+        android:layout_marginLeft="10dp"
+        android:textSize="11dp"
+        android:textColor="#DD2727"
+        android:background="@drawable/service_shape_circle_red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/tv_contact_phone"
+        style="@style/base_text"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="left"
+        android:text="18354677652" />
+
+</RelativeLayout>

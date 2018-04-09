@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_loginView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.jaydenxiao.common.commonwidget.CustomTitleBar
+            android:id="@+id/custom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:is_white="true"
+            app:title_elevation="0" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="35dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="43dp">
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="54dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/mine_account"
+                android:textColor="@color/text_title_color"
+                android:textSize="@dimen/textSize_15" />
+
+            <com.horen.cortp.company.widget.PWEditText
+                android:id="@+id/et_account"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="54dp"
+                android:background="@color/white"
+                android:hint="手机号/邮箱/登陆账号"
+                android:paddingRight="20dp"
+                android:singleLine="true"
+                android:textColor="@color/text_title_color"
+                android:textColorHint="@color/DCDCDC"
+                android:textSize="@dimen/textSize_13"
+                app:x_clearDrawable="@drawable/icon_hide" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:background="#EBEBEB" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="54dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="@string/account_password"
+                android:textColor="@color/text_title_color"
+                android:textSize="@dimen/textSize_15" />
+
+            <com.horen.cortp.company.widget.PWEditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="54dp"
+                android:background="@color/white"
+                android:hint="@string/login_password_null"
+                android:inputType="textPassword"
+                android:paddingRight="20dp"
+                android:textColor="@color/text_title_color"
+                android:textColorHint="@color/DCDCDC"
+                android:textSize="@dimen/textSize_13"
+                android:maxLength="18"
+                app:x_clearDrawable="@drawable/icon_hide"
+                app:x_hidePwdDrawable="@drawable/icon_hide_eye"
+                app:x_showPwdDrawable="@drawable/icon_open_eye" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:background="#EBEBEB" />
+
+        </FrameLayout>
+
+        <com.jaydenxiao.common.commonwidget.RippleButton
+            android:id="@+id/rbt_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            app:gray_text="登录" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="29dp"
+            android:layout_marginRight="29dp">
+
+            <TextView
+                android:id="@+id/tv_forget_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/login_forget_pwd"
+                android:textColor="@color/color_main_color"
+                android:textSize="@dimen/textSize_12" />
+
+            <TextView
+                android:id="@+id/tv_register_auth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/login_register_auth"
+                android:textColor="@color/color_main_color"
+                android:textSize="@dimen/textSize_12" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_registered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="12dp"
+        android:text="@string/login_registered"
+        android:textColor="#ff5f8bfa"
+        android:textSize="@dimen/textSize_15"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:gravity="center"
+        android:text="@string/hint_register_safe"
+        android:textColor="#878787"
+        android:textSize="@dimen/textSize_12"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_15"
+        android:autoLink="phone"
+        android:gravity="center"
+        android:text="@string/hint_register_contact"
+        android:textColor="@color/color_main_color"
+        android:textSize="@dimen/textSize_14"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+</LinearLayout>

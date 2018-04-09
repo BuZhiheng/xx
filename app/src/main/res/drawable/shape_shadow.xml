@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--阴影图片，详见http://blog.csdn.net/gu18168/article/details/54986057-->
+
+    <gradient
+        android:angle="90"
+        android:endColor="#33000000"
+        android:startColor="@android:color/transparent"></gradient>
+</shape>

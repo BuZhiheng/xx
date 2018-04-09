@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_animation_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_order_list"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/iv_map_refresh"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            android:clickable="true"
+            android:elevation="2dp"
+            android:src="@drawable/icon_order_list" />
+        <!--刷新-->
+        <RelativeLayout
+            android:id="@+id/iv_map_refresh"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_white_bg"
+            android:clickable="true"
+            android:elevation="2dp">
+
+            <ImageView
+                android:id="@+id/iv_refresh_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_map_refresh" />
+        </RelativeLayout>
+        <!--定位-->
+        <RelativeLayout
+            android:id="@+id/iv_map_location"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_below="@+id/iv_map_refresh"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_white_bg"
+            android:clickable="true"
+            android:elevation="2dp">
+
+            <ImageView
+                android:id="@+id/iv_locaiton_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_map_location" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_home_view"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_create_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <ImageView
+                android:id="@+id/iv_animation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:src="@drawable/icon_screen_draw" />
+
+            <TextView
+                android:id="@+id/tv_create_order"
+                android:layout_width="86dp"
+                android:layout_height="86dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_main_ofo_bg"
+                android:drawableTop="@drawable/icon_create_order_box"
+                android:elevation="2dp"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="16dp"
+                android:text="创建订单"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:background="@color/divider" />
+
+        <com.flyco.tablayout.CommonTabLayout
+            android:id="@+id/common_tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ffffff"
+            tl:tl_indicator_color="#2C97DE"
+            tl:tl_indicator_height="0dp"
+            tl:tl_textSelectColor="@color/color_378"
+            tl:tl_textUnselectColor="#ffdcdcdc"
+            tl:tl_textsize="12sp"
+            tl:tl_underline_color="#DDDDDD"
+            tl:tl_underline_height="1dp" />
+    </LinearLayout>
+
+</LinearLayout>
+

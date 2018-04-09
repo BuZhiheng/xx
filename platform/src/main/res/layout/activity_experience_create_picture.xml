@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    >
+    <include layout="@layout/toolbar_layout"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_use_box_create_picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_10"
+        />
+    <Button
+        android:id="@+id/btn_experience_create_pic_delete"
+        android:onClick="onClick"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:background="@drawable/bg_delete"
+        android:text="@string/platform_delete_experience_txt"
+        android:textSize="@dimen/font_normal"
+        android:textColor="@color/white"
+        />
+</LinearLayout>

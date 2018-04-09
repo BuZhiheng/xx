@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_address_book"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_address_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_rl_click"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="@dimen/margin_20"
+                    android:layout_height="@dimen/margin_20"
+                    android:background="@drawable/shape_circle_red"
+                    android:gravity="center"
+                    android:text="收"
+                    android:textColor="@color/cortpAccent"
+                    android:textSize="@dimen/textSize_12" />
+
+                <TextView
+                    android:id="@+id/tv_address_name"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_12"
+                    tools:text="吴建斌吴建吴建斌吴建" />
+
+                <TextView
+                    android:id="@+id/tv_address_mobile"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_12"
+                    tools:text="18616314872" />
+
+                <TextView
+                    android:id="@+id/tv_address_default"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:background="@drawable/shape_rectangle_blue"
+                    android:padding="2dp"
+                    android:text="默认"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/textSize_12"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_address_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:background="@drawable/shape_rectangle_green"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:textColor="@color/cortp_deep_green"
+                    android:textSize="@dimen/textSize_12"
+                    tools:text="嘉兴仓储中心" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_4"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/margin_20"
+                    android:layout_height="@dimen/margin_20"
+                    android:padding="2dp"
+                    android:src="@drawable/icon_address" />
+
+                <TextView
+                    android:id="@+id/tv_address_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:textSize="@dimen/sp_12"
+                    tools:text="上海闵行区 田林路1036号科技绿洲16号楼302室" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

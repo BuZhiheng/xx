@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jcminarro.roundkornerlayout.RoundKornerLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/round_ll"
+    android:background="@color/white"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/toolbar_company"
+        android:visibility="gone" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <FrameLayout
+            android:id="@+id/fl_tab_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        <include layout="@layout/company_home_fragment_bottom" />
+    </FrameLayout>
+</com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>

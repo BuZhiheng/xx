@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_relation_outside"
+    android:visibility="gone"
+    tools:visibility="visible"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/margin_12">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:text="@string/region"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize_16" />
+
+        <EditText
+            android:id="@+id/et_outside_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:textColorHint="@color/text_hint_color"
+            android:background="@null"
+            android:hint="@string/region"
+            android:maxLength="50"
+            android:textSize="@dimen/textSize_16" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/divider"
+        android:layout_marginTop="0dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/margin_12">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:text="@string/city"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize_16" />
+
+        <EditText
+            android:id="@+id/et_outside_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/text_hint_color"
+            android:layout_weight="3"
+            android:background="@null"
+            android:hint="@string/city"
+            android:maxLength="50"
+            android:textSize="@dimen/textSize_16" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/divider"
+        android:layout_marginTop="0dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/margin_12">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:text="@string/state_county"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize_16" />
+
+        <EditText
+            android:id="@+id/et_outside_county"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/text_hint_color"
+            android:layout_weight="3"
+            android:background="@null"
+            android:hint="@string/state_county"
+            android:maxLength="50"
+            android:textSize="@dimen/textSize_16" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/divider"
+        android:layout_marginTop="0dp" />
+
+</LinearLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin_10"
+        android:background="@color/bg" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/margin_12">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:text="@string/company_easy"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_16" />
+
+                <com.horen.cortp.company.widget.ClearView
+                    android:id="@+id/et_company_easy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:hint="@string/hint_relation_org_name"
+                    android:textColorHint="@color/text_hint_color"
+                    android:textSize="@dimen/textSize_16" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/divider"
+                android:layout_marginTop="0dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/margin_12">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:text="@string/company_full"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_16" />
+
+                <com.horen.cortp.company.widget.ClearView
+                    android:id="@+id/et_company_full"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:hint="@string/hint_relation_long_name"
+                    android:textColorHint="@color/text_hint_color"
+                    android:textSize="@dimen/textSize_16" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/divider"
+                android:layout_marginTop="0dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/margin_12">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:text="@string/new_address_area"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_16" />
+
+                <TextView
+                    android:id="@+id/tv_add_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:drawableRight="@drawable/icon_right"
+                    android:hint="@string/add_relation_hint_area"
+                    android:maxLength="50"
+                    android:textColorHint="@color/text_hint_color"
+                    android:textSize="@dimen/textSize_16" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/divider"
+                android:layout_marginTop="0dp" />
+
+            <!--国内 省市区-->
+            <include layout="@layout/include_provinces" />
+
+            <!--国外 -->
+            <include layout="@layout/include_outside" />
+
+            <Button
+                android:id="@+id/bt_relation_save"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="@dimen/margin_30"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/selector_bt_blue"
+                android:text="@string/add_contact_save"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_15" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

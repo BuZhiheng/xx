@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/margin_20"
+    android:paddingRight="@dimen/margin_20">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_contact_not_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_not_delete"
+            android:textColor="#D13F36"
+            android:textSize="@dimen/textSize_13" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/tv_contact_delete"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginRight="@dimen/margin_10"
+                android:src="@drawable/icon_check_state_false" />
+
+            <TextView
+                android:id="@+id/tv_contact_name"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/text_title_color"
+                android:textSize="@dimen/textSize_14"
+                tools:text="张三风" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:paddingBottom="@dimen/margin_10"
+                android:paddingTop="@dimen/margin_10">
+
+                <TextView
+                    android:id="@+id/tv_contact_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/text_title_color"
+                    android:textSize="@dimen/textSize_14"
+                    tools:text="手机：13977795952" />
+
+                <TextView
+                    android:id="@+id/tv_contact_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/text_title_color"
+                    android:textSize="@dimen/textSize_14"
+                    tools:text="邮箱：mike@qq.com" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

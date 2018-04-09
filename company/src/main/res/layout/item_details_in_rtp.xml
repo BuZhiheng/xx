@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/margin_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/in_rtp_qty"
+            android:textColor="@color/text_title_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="—" />
+
+        <TextView
+            android:id="@+id/tv_item_batch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01"
+            android:textColor="@color/text_title_color" />
+
+        <TextView
+            android:id="@+id/tv_rtp_qty2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingLeft="@dimen/margin_20"
+            android:text="共计300个"
+            android:textColor="@color/text_title_color" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_color" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <!--收箱服务商-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_10"
+        android:text="@string/order_info"
+        android:textColor="@color/text_title_color" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_color" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:padding="@dimen/margin_5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_inrtp_detail_service" />
+
+        <TextView
+            android:id="@+id/tv_order_details_interflow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="物流服务商" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:padding="@dimen/margin_5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_inrtp_detail_contacts" />
+
+        <TextView
+            android:id="@+id/tv_order_details_contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="吴建斌" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:padding="@dimen/margin_5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_inrtp_detail_way" />
+
+        <TextView
+            android:id="@+id/tv_order_details_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="phone"
+            android:text="18616247895" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:text="@string/order_inrtp_detail_plate" />
+
+        <TextView
+            android:id="@+id/tv_order_details_plate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="沪A3012" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:padding="@dimen/margin_5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_inrtp_detail_start_date" />
+
+        <TextView
+            android:id="@+id/tv_order_details_start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017-11-11" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_10"
+        android:background="@color/divider_color" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:padding="@dimen/margin_5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/tv_order_details_end_date"
+            android:text="@string/order_inrtp_detail_end_date" />
+
+        <TextView
+            android:id="@+id/tv_order_details_end_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="2017-11-12" />
+
+    </RelativeLayout>
+
+</LinearLayout>

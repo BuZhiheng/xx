@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/marginLR_12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:singleLine="true"
+            android:id="@+id/tv_order_number"
+            style="@style/base_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="100dp"
+            android:text="@string/order_number" />
+
+        <TextView
+            android:id="@+id/tv_order_time"
+            style="@style/base_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/marginLR_12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:id="@+id/tv_order_company"
+            style="@style/base_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tv_order_delivery_status"
+            style="@style/base_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textColor="@color/color_main_color" />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/marginLR_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/base_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delivery_company_name" />
+
+        <TextView
+            android:id="@+id/tv_to_companyname"
+            style="@style/base_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/marginLR_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/base_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delivery_address" />
+
+        <TextView
+            android:id="@+id/tv_to_address"
+            style="@style/base_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_to_contact"
+        style="@style/base_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/contacts" />
+
+    <TextView
+        android:id="@+id/tv_to_tel"
+        style="@style/base_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/contact_number" />
+
+    <TextView
+        android:id="@+id/tv_collect_warehouse"
+        style="@style/base_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/pickup_warehouse" />
+
+
+    <LinearLayout
+        style="@style/marginLR_12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/base_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/goods_list" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:background="@color/divider_color" />
+    </LinearLayout>
+</LinearLayout>

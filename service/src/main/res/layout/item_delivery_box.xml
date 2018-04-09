@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        style="@style/content_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/service_abnormal_reject" />
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/tv_box_type"
+        style="@style/content_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IF1040" />
+
+    <TextView
+        android:id="@+id/tv_box_color"
+        style="@style/content_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="蓝色版" />
+
+    <TextView
+        android:id="@+id/tv_box_number"
+        style="@style/content_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="100个" />
+</LinearLayout>

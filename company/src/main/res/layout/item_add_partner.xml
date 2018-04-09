@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_20"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_item_add_partner_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_16"
+                tools:text="上海市鸿润物流技术有限公司" />
+
+            <TextView
+                android:id="@+id/tv_item_add_partner_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:textSize="@dimen/textSize_12"
+                tools:text="上海市徐汇区田林路487号上海市徐汇区田林路487号" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_item_add_partner_relevance"
+            android:layout_width="match_parent"
+            android:textColor="@color/cortp_blue"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="7"
+            android:gravity="center"
+            android:text="@string/add_partner_yes"
+            android:textSize="@dimen/textSize_12" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/cortp_mine_bg" />
+</LinearLayout>

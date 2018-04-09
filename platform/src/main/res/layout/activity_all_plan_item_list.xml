@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <ImageView
+        android:id="@+id/iv_all_plan_list"
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:background="@color/main_blue"
+        />
+    <TextView
+        android:id="@+id/tv_all_plan_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/margin_5"
+        android:paddingRight="@dimen/margin_5"
+        android:paddingTop="@dimen/margin_20"
+        android:paddingBottom="@dimen/margin_20"
+        android:background="@drawable/bg_common_white_click"
+        android:gravity="center"
+        android:text=""
+        android:textSize="@dimen/font_normal2"
+        android:textColor="@color/text_title_color"
+        />
+</LinearLayout>

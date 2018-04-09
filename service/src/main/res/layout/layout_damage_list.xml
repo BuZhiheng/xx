@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <com.allen.library.CommonTextView
+        android:id="@+id/ctv_repair_list"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        app:cDividerLineHeight="0dp"
+        app:cLeftTextSize="16sp"
+        app:cLeftTextString="@string/service_repair_list"
+        app:cRightIconResForDrawableRight="@drawable/service_up_arrow"
+        app:cRightViewPaddingRight="8dp" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_collect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"></android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

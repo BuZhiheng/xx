@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height"
+            android:background="@color/color_main_color"
+            android:elevation="2dp"
+            android:minHeight="@dimen/toolbar_height"
+            android:subtitle="">
+
+            <ImageView
+                android:id="@+id/iv_select_click"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="?attr/actionBarItemBackground"
+                android:padding="12dp"
+                android:src="@drawable/icon_my" />
+
+            <TextView
+                android:id="@+id/tool_bar_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:text=""
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/iv_scan_click"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="?attr/actionBarItemBackground"
+                android:padding="12dp"
+                android:src="@drawable/icon_scanner"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_tab_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </FrameLayout>
+
+        <com.flyco.tablayout.CommonTabLayout
+            android:id="@+id/common_tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#ffffff"
+            android:elevation="4dp"
+            tl:tl_iconHeight="23dp"
+            tl:tl_iconWidth="23dp"
+            tl:tl_indicator_color="#2C97DE"
+            tl:tl_indicator_height="0dp"
+            tl:tl_textSelectColor="@color/color_378"
+            tl:tl_textUnselectColor="@color/black"
+            tl:tl_textsize="12sp"
+            tl:tl_underline_color="#DDDDDD"
+            tl:tl_underline_height="1dp" />
+    </LinearLayout>
+
+</RelativeLayout>

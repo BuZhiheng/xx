@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="105dp"
+    android:layout_marginBottom="17dp"
+    android:layout_marginTop="10dp">
+
+    <EditText
+        android:id="@+id/et_remake"
+        style="@style/base_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:background="@drawable/shape_et"
+        android:gravity="left"
+        android:hint="@string/order_et_note_hint"
+        android:maxLength="50"
+        android:paddingLeft="10dp"
+        android:paddingTop="4dp"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:textColor="@color/text_content_color"
+        android:textColorHint="#DCDCDC"
+        android:textSize="@dimen/textSize_14" />
+
+    <TextView
+        android:id="@+id/id_editor_detail_font_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="3dp"
+        android:layout_marginRight="10dp"
+        android:text="0/50"
+        android:textColor="@color/text_content_color"
+        android:textSize="13sp" />
+</RelativeLayout>
+
+

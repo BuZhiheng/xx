@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <android.support.design.widget.TabLayout
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        android:elevation="2dp"
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        app:tabIndicatorColor="@color/color_main_color"
+        app:tabSelectedTextColor="@color/color_main_color"
+        app:tabTextColor="@color/black"></android.support.design.widget.TabLayout>
+
+
+    <com.horen.cortp.service.widget.NoScrollViewPager
+        android:id="@+id/vp_hundred_order"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></com.horen.cortp.service.widget.NoScrollViewPager>
+
+
+</LinearLayout>

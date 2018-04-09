@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/margin_20"
+        android:paddingRight="@dimen/margin_20">
+
+        <TextView
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/add_user_name"
+            android:textColor="@color/text_title_color"
+            android:textSize="@dimen/textSize_15" />
+
+        <com.horen.cortp.company.widget.ClearView
+            android:id="@+id/et_contact_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:background="@null"
+            android:hint="@string/add_name_null"
+            android:inputType="text"
+            android:textColor="@color/text_title_color"
+            android:textColorHint="@color/text_hint_color"
+            android:textSize="@dimen/textSize_14" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:background="@color/bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/margin_20"
+        android:paddingRight="@dimen/margin_20">
+
+        <TextView
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/company_phone"
+            android:textColor="@color/text_title_color"
+            android:textSize="@dimen/textSize_15" />
+
+        <com.horen.cortp.company.widget.ClearView
+            android:id="@+id/et_contact_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:background="@null"
+            android:hint="@string/company_phone_null"
+            android:inputType="phone"
+            android:textColor="@color/text_title_color"
+            android:textColorHint="@color/text_hint_color"
+            android:textSize="@dimen/textSize_14" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:background="@color/bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/margin_20"
+        android:paddingRight="@dimen/margin_20">
+
+        <TextView
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/add_user_email"
+            android:textColor="@color/text_title_color"
+            android:textSize="@dimen/textSize_15" />
+
+        <com.horen.cortp.company.widget.ClearView
+            android:id="@+id/et_contact_email"
+            android:maxLength="30"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:background="@null"
+            android:hint="@string/add_email_null"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/text_title_color"
+            android:textColorHint="@color/text_hint_color"
+            android:textSize="@dimen/textSize_14" />
+
+    </LinearLayout>
+
+    <com.allen.library.SuperButton
+        android:id="@+id/bt_contact_save"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/margin_30"
+        android:enabled="false"
+        android:text="@string/title_save"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_15"
+        app:sCornersRadius="5dp"
+        app:sSelectorDisableColor="@color/DCDCDC"
+        app:sSelectorNormalColor="@color/color_main_color"
+        app:sSelectorPressedColor="@color/color_main_color"
+        app:sUseSelector="true" />
+
+</LinearLayout>
